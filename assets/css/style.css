@@ -1,0 +1,14 @@
+/* 
+Unit 4 game stylesheet
+*/
+
+
+.game-header {
+    /* font-size: 10em!important; */
+    background-color: rgb(49, 0, 128);
+    color: white;
+}
+
+.gem {
+    height: 150px;
+}
