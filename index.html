@@ -12,24 +12,26 @@
   </head>
   <body>
     <div class="container">
-        <div class="game-header jumbotron jumbotron-fluid rounded">
-            <div class="container">
+        <div class="game-header jumbotron jumbotron-fluid rounded shadow text-dark bg-warning">
+            
             <h1 class="display-3 text-center">Crystals Collector!</h1>
             <!-- <p class="lead">This is a modified jumbotron that occupies
                             the entire horizontal space of its parent.</p> -->
-            </div>
+            
         </div>
-        <div class="game-info row col-md-6">
+        <div class="game-info row col-md-6 rounded border border-secondary py-1 ml-0 bg-light  mb-2">
             <p>You will be given a random number at the start of the game.</p>
             <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
             <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number. </p>
             <p>Each time when the game starts, the game will change the values of each crystal.</p>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <h2 class="random-target-num" >00</h2>
+            
+            <div class="col-md-4 rounded border border-secondary py-1 ml-3 mb-2 bg-white">
+                <h2 class="random-target-num pl-0" >00</h2>
             </div>    
-            <div class="col-md-2">
+            <div class="col-md-2 border border-light rounded ml-2 pl-1 py-1 bg-warning mb-2">
+                <p>User alert!</p>
                 <p>Wins <span class="wins">0</span></p>
                 <p>Losses <span class="loses">0</span></p>
             </div>
@@ -50,7 +52,7 @@
         </div>
         <div class="row">
                 <div class="col-md-4 border">
-                    <h2 class="total-score" >00</h2>
+                    <h2 class="total-score" >0</h2>
                 </div>     
             </div>
         <footer>
