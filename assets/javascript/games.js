@@ -29,17 +29,10 @@ $(document).ready(function() {
                 $( this ).attr( "value", randNum);
                 console.log(this);
             })
-            // $( "input[value='Hot Fuzz']" )
             
-            // varCrystal.attr( "value", randNum);
-            // $( "li" ).each(function( index ) {
-            //     console.log( index + ": " + $( this ).text() );
-            //   });
-            // });
-            
-
         }
     }
+
     
     if(!gameStarted) {
         theGame.resetGame();
@@ -61,22 +54,23 @@ $(document).ready(function() {
         $(".total-score").text(theGame.playerTotal.toString());
         if (theGame.playerTotal == theGame.targetNumber) {
             console.log(" You win!! ");
-            playerWins++;
+            theGame.playerWins++;
+            $("#wins").text(theGame.playerWins);
+            alert("You Won!!")
+            // $("#user-alert").text("You Won!!");
+            // $("#user-alert").delay(2000).text("New Game");
             theGame.resetGame();
-
         }
         else if(theGame.playerTotal > theGame.targetNumber) {
             console.log(" You lose")
-            
-            theGame.playerlosses = parseInt($(".losses").text(), 10);
-            theGame.playerlosses++;
-
+            // theGame.playerlosses = parseInt($(".losses").text(), 10);
+            theGame.playerLosses++;
+            $("#losses").text(theGame.playerLosses)
+            alert("You Lost!!")
+            $("#user-alert").delay(220000).text("You Lost!");
+            // $("#user-alert").text("New Game");
             theGame.resetGame();
         }
-
-
-
-
 
     });
 
