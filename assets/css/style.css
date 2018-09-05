@@ -6,12 +6,6 @@ body {
     background-image: url("../images/bananas.png");
     background-repeat: repeat;
 }
-.game-header {
-    /* font-size: 10em!important; */
-    /* background-color: blue;
-    color: yellow; */
-    /* background-image: linear-gradient(to bottom, tan, brown); */
-}
 
 .gem {
     height: 150px;

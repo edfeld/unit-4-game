@@ -1,4 +1,4 @@
-/* game.js */
+/* Unit-4-game - game.js */
 $(document).ready(function() {
 
     let buttonColor;
@@ -41,8 +41,12 @@ $(document).ready(function() {
 
     // Your code here...
     $(".gem").on("click", function() {
-        console.log(this);
-        buttonColor = $(this).attr("color");
+        let arrText;
+        console.log($(this).attr("alt"));
+        buttonColor = $(this).attr("alt"); // Use Alt attribute to get color
+        arrText = buttonColor.split(" ");
+        buttonColor = arrText[0]; 
+
         buttonValue = $(this).attr("value")
         console.log(buttonColor);
         console.log("51. buttonValue", buttonValue);
